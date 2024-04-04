@@ -124,3 +124,13 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+#contactusimage{
+    width: 300px;
+    height: 300px;
+}
+#contactusdiv{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
