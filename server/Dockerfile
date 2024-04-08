@@ -16,10 +16,10 @@
     # Copy the rest of the files
     COPY . $APP
 
-    EXPOSE 8001
+    EXPOSE 8000
 
     RUN chmod +x /app/entrypoint.sh
 
     ENTRYPOINT ["/bin/bash","/app/entrypoint.sh"]
 
-    CMD ["gunicorn", "--bind", ":8001", "--workers", "3", "djangoproj.wsgi"]
+    CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "djangoproj.wsgi"]
